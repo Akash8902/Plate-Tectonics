@@ -1,0 +1,224 @@
+body{
+    margin:0%;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    overflow-y: hidden;
+}
+
+img{
+ height:25px;
+ width:50px;
+}
+.scene{
+ height: 90vh;
+ width: 120vh;
+ border: 1px solid black;
+ margin: 3rem auto;
+ background: url(./images/img.png);
+ background-size: cover;
+ position:relative;
+ box-shadow: 1px 2px 60px rgba(0,0,0,0.4);
+ overflow-x: hidden;
+}
+
+.scene .arrow1{
+    position: absolute;
+    bottom:19%;
+    left:1%;
+    animation: Slide1 3s linear forwards, hidetext1 0.25s ease-out 3s forwards;
+}
+@keyframes Slide1 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(500%);
+    }  
+}
+.scene .txt1{
+    position: absolute;
+    bottom: 9%;
+    left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    color: yellow;
+    animation: Roll1 0.35s linear, hidetext1 0.5s ease-out 3s forwards;
+}
+
+@keyframes Roll1 {
+    0%{
+        transform: translateX(-15%);
+        opacity: 10%;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 100%;
+    }  
+}
+
+@keyframes hidetext1{
+    0% { opacity: 1; visibility: visible; }  
+  100% { opacity: 0; visibility: hidden; }
+  }
+
+  .scene .arrow2{
+    position: absolute;
+    bottom:18%;
+    left:49%;
+    animation: Slide2 3s linear 4s forwards, hidetext1 0.5s ease-out 7s forwards, hidetext2 4s;
+}
+.a2{
+    transform:rotate(20deg);
+}
+@keyframes Slide2 {
+    0%{
+        transform: translate(0%,0%);
+    }
+    100%{
+        transform: translate(250%,195%);
+    }  
+}
+
+.scene .txt2{
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    color: yellow;
+    animation: Roll2 0.35s linear 4s, hidetext1 0.5s ease-out 7s forwards, hidetext2 4s;
+    
+}
+
+
+@keyframes Roll2 {
+    0%{
+        transform: translateX(15%);
+        opacity: 10%;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes hidetext2{
+   0%{ opacity: 0;}
+   100%{opacity: 0;}
+  }
+
+  .scene .arrow3{
+    position: absolute;
+    bottom:18%;
+    left:65%;
+    animation: Slide3 3s linear 8s forwards, hidetext1 0.5s ease-out 11s forwards, hidetext2 8s;
+}
+.a3{
+    transform:rotate(90deg);
+}
+@keyframes Slide3 {
+    0%{
+        transform: translate(0%,0%);
+    }
+    100%{
+        transform: translate(280%,280%);
+    }  
+}
+
+  .scene .txt3{
+    position: absolute;
+    bottom: 25%;
+    right: 2.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    color: yellow;
+    animation: Roll3 0.35s linear 8s, hidetext1 0.5s ease-out 11s forwards, hidetext2 8s;
+    
+}
+
+@keyframes Roll3 {
+    0%{
+        transform: translateY(15%);
+        opacity: 10%;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+.scene .arrow4{
+    position: absolute;
+    bottom:30%;
+    right:25%;
+    animation: Slide4 3s linear 12s forwards, hidetext1 0.5s ease-out 15s forwards, hidetext2 12s;
+}
+.a4{
+    transform:rotate(180deg);
+}
+@keyframes Slide4 {
+    0%{
+        transform: translateY(350%);
+    }
+    100%{
+        transform: translateY(0%);
+    }  
+}
+
+  .scene .txt4{
+    position: absolute;
+    bottom: 18%;
+    right: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    color: yellow;
+    animation: Roll4 0.35s linear 12s, hidetext1 0.5s ease-out 15s forwards, hidetext2 12s;
+    
+}
+
+
+
+@keyframes Roll4 {
+    0%{
+        transform: translate(5%,-15%);
+        opacity: 10%;
+    }
+    100%{
+        transform: translate(0%,0%);
+        opacity: 100%;
+    }
+}
+
+  .scene .txt5{
+    position: absolute;
+    bottom: 52%;
+    right: 17%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    color: black;
+    animation: Roll5 0.35s linear 16s, hidetext1 0.5s ease-out 21s forwards, hidetext2 16s;
+    
+}
+
+@keyframes Roll5 {
+    0%{
+        transform: translate(-5%,15%);
+        opacity: 10%;
+    }
+    100%{
+        transform: translate(0%,0%);
+        opacity: 100%;
+    }
+}
+
+.o5{
+    height:10%;
+    width:15%;
+    transform:rotate(90deg);
+    position: absolute;
+    right:24%;
+    bottom:33%;
+    animation: onoval5 0.35s linear 16s, hidetext1 0.5s ease-out 21s forwards, hidetext2 16s;
+}
+@keyframes onoval5{
+    0% { opacity: 0; visibility: hidden;}  
+  100% { opacity: 1; visibility: visible; }
+  }
