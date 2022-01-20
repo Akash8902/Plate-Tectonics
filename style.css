@@ -13,7 +13,7 @@ img{
  width: 120vh;
  border: 1px solid black;
  margin: 3rem auto;
- background: url(./img.png);
+ background: url(/img.png);
  background-size: cover;
  position:relative;
  box-shadow: 1px 2px 60px rgba(0,0,0,0.4);
